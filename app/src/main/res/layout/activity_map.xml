@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapas.Map">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/rosa"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="40dp">
+
+        <ImageView
+            android:id="@+id/iconoAtras"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icono_atras"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="13dp"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Capital Social"
+            android:textSize="12dp"
+            android:textColor="@color/blanco"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        mapbox:mapbox_cameraTargetLat="-32.557013"
+        mapbox:mapbox_cameraTargetLng="-56.149056"
+        mapbox:mapbox_cameraZoom="9.526846"
+        app:layout_constraintTop_toBottomOf="@+id/tool" />
+</androidx.constraintlayout.widget.ConstraintLayout>

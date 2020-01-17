@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Capital Social</string>
+    <string name="error">Error en la camara</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="mapbox_access_token">pk.eyJ1Ijoiam9ubnlzYW5jaGV6IiwiYSI6ImNrNWgxZnlvODBhNTIzbHMxbnVienJrM2MifQ.-qnVwXS1px5LZXadmi05rA</string>
+</resources>
